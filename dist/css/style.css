@@ -58,7 +58,7 @@ body {
 .in-list-check li::before {
     background-image: none;
     font-size: 14px;
-    font-family: 'Font Awesome 5 Free';
+    font-family: "Font Awesome 5 Free";
     font-weight: 900;
     content: "\f00c";
     color: #fc5b3f;
@@ -241,7 +241,7 @@ header .uk-navbar-dropdown li {
 
 .in-slideshow .in-slideshow-features {
     height: 220px;
-    background: linear-gradient(0deg, #212224 65%, rgba(33, 34, 36, 0.3) 100%);
+    background: linear-gradient(0deg, rgb(33, 34, 36) 65%, rgba(33, 34, 36, 0.3) 100%);
     margin-top: -190px;
 }
 
@@ -572,7 +572,7 @@ footer .in-trading-risk {
 }
 
 .in-widget-tag a:hover .uk-label {
-    transition: all ease .5s;
+    transition: all ease 0.5s;
     background-color: #fc5b3f;
     color: #fff;
 }
@@ -1112,7 +1112,7 @@ footer .in-trading-risk {
 }
 
 .in-content-11 .uk-card-default {
-    transition: all ease .5s;
+    transition: all ease 0.5s;
     border: 1px solid #e8e8e8;
     background-color: #fff;
 }
@@ -1137,12 +1137,12 @@ footer .in-trading-risk {
 
 .in-content-11 .uk-card-default:hover h4 {
     color: #fc5b3f;
-    transition: all ease .5s;
+    transition: all ease 0.5s;
 }
 
 .in-content-11 .uk-card-default:hover .in-icon-wrap {
     background-color: #fc5b3f;
-    transition: all ease .5s;
+    transition: all ease 0.5s;
 }
 
 /* counter component */
@@ -1173,7 +1173,7 @@ footer .in-trading-risk {
 
 .in-faq-1 .uk-accordion-title::before {
     content: "\f055";
-    font-family: 'Font Awesome 5 Free';
+    font-family: "Font Awesome 5 Free";
     font-style: normal;
     font-weight: 900;
     font-size: 14px;
@@ -1212,7 +1212,7 @@ footer .in-trading-risk {
 
 .in-faq-2 .uk-accordion-title .uk-card-default::after {
     content: "\f105";
-    font-family: 'Font Awesome 5 Free';
+    font-family: "Font Awesome 5 Free";
     font-style: normal;
     font-weight: 900;
     font-size: 14px;
@@ -1266,7 +1266,7 @@ footer .in-trading-risk {
 
 .in-faq-3 .uk-accordion-title::after {
     content: "\f0da";
-    font-family: 'Font Awesome 5 Free';
+    font-family: "Font Awesome 5 Free";
     font-style: normal;
     font-weight: 900;
     font-size: 14px;
@@ -1303,7 +1303,7 @@ footer .in-trading-risk {
 
 .in-faq-4 .uk-accordion-title::after {
     content: "\f067";
-    font-family: 'Font Awesome 5 Free';
+    font-family: "Font Awesome 5 Free";
     font-style: normal;
     font-weight: 900;
     font-size: 14px;
@@ -1330,7 +1330,7 @@ footer .in-trading-risk {
 
 .in-faq-5 .uk-accordion-title::before {
     content: "\f053";
-    font-family: 'Font Awesome 5 Free';
+    font-family: "Font Awesome 5 Free";
     font-style: normal;
     font-weight: 900;
     font-size: 13px;
@@ -1364,7 +1364,7 @@ footer .in-trading-risk {
 }
 
 .in-gallery-2 .uk-overlay-primary {
-    background: black;
+    background: rgb(0, 0, 0);
     background: radial-gradient(circle farthest-corner at top right, rgba(0, 0, 0, 0.48) 0%, rgba(0, 0, 0, 0.12) 50%, rgba(255, 255, 255, 0) 65%);
 }
 
@@ -1472,7 +1472,7 @@ footer .in-trading-risk {
 .in-pricing-1 .uk-card-body .uk-list-bullet>li::before {
     background-image: none;
     font-size: 14px;
-    font-family: 'Font Awesome 5 Free';
+    font-family: "Font Awesome 5 Free";
     font-weight: 900;
     content: "\f00c";
     color: #fc5b3f;
@@ -1629,7 +1629,7 @@ footer .in-trading-risk {
 .in-pricing-4 .uk-card-body .uk-list-bullet>li::before {
     background-image: none;
     font-size: 14px;
-    font-family: 'Font Awesome 5 Free';
+    font-family: "Font Awesome 5 Free";
     font-weight: 900;
     content: "\f00c";
     color: #fc5b3f;
@@ -1764,7 +1764,7 @@ footer .in-trading-risk {
 .in-pricing-6 .uk-card-body .uk-list-bullet>li::before {
     background-image: none;
     font-size: 14px;
-    font-family: 'Font Awesome 5 Free';
+    font-family: "Font Awesome 5 Free";
     font-weight: 900;
     content: "\f00c";
     color: #fc5b3f;
@@ -1913,7 +1913,7 @@ footer .in-trading-risk {
 
 .in-timeline-2 .in-timeline-item:after,
 .in-timeline-2 .in-timeline-item:before {
-    content: '';
+    content: "";
     display: block;
     width: 100%;
     clear: both;
@@ -1978,17 +1978,6 @@ footer .in-trading-risk {
 }
 
 /* [ 7. utility ] */
-@-webkit-keyframes hideLoader {
-    0% {
-        width: 100%;
-        height: 100%;
-    }
-
-    100% {
-        width: 0;
-        height: 0;
-    }
-}
 @keyframes hideLoader {
     0% {
         width: 100%;
@@ -2022,18 +2011,15 @@ body>div.in-loader div {
     margin: 2rem 0.3rem;
     background: #fc5b3f;
     border-radius: 50%;
-    -webkit-animation: 0.9s bounce infinite alternate;
-            animation: 0.9s bounce infinite alternate;
+    animation: 0.9s bounce infinite alternate;
 }
 
 body>div.in-loader div:nth-child(2) {
-    -webkit-animation-delay: 0.3s;
-            animation-delay: 0.3s;
+    animation-delay: 0.3s;
 }
 
 body>div.in-loader div:nth-child(3) {
-    -webkit-animation-delay: 0.6s;
-            animation-delay: 0.6s;
+    animation-delay: 0.6s;
 }
 
 body:not(.loaded)>div.in-loader {
@@ -2045,15 +2031,7 @@ body:not(.loaded) {
 }
 
 body.loaded>div.in-loader {
-    -webkit-animation: hideLoader 0.5s linear 0.5s forwards;
-            animation: hideLoader 0.5s linear 0.5s forwards;
-}
-
-@-webkit-keyframes bounce {
-    to {
-        opacity: 0.3;
-        transform: translate3d(0, -1rem, 0);
-    }
+    animation: hideLoader 0.5s linear 0.5s forwards;
 }
 
 @keyframes bounce {
@@ -2149,7 +2127,7 @@ a.in-generic-email:hover {
 }
 
 .in-button-app span.wrapper span::before {
-    content: "\A";
+    content: "\a";
     white-space: pre;
 }
 
@@ -2160,7 +2138,7 @@ a.in-generic-email:hover {
 }
 
 @font-face {
-    font-family: 'Inter';
+    font-family: "Inter";
     font-style: normal;
     font-weight: 400;
     src: local("Inter Regular"), local("Inter-Regular"), url("../fonts/inter-v2-latin-regular.woff2") format("woff2"), url("../fonts/inter-v2-latin-regular.woff") format("woff");
@@ -2168,7 +2146,7 @@ a.in-generic-email:hover {
 }
 
 @font-face {
-    font-family: 'Inter';
+    font-family: "Inter";
     font-style: normal;
     font-weight: 500;
     src: local("Inter Medium"), local("Inter-Medium"), url("../fonts/inter-v2-latin-500.woff2") format("woff2"), url("../fonts/inter-v2-latin-500.woff") format("woff");
@@ -2176,7 +2154,7 @@ a.in-generic-email:hover {
 }
 
 @font-face {
-    font-family: 'Inter';
+    font-family: "Inter";
     font-style: normal;
     font-weight: 700;
     src: local("Inter Bold"), local("Inter-Bold"), url("../fonts/inter-v2-latin-700.woff2") format("woff2"), url("../fonts/inter-v2-latin-700.woff") format("woff");
@@ -2517,17 +2495,17 @@ a.in-totop {
 }
 
 .fa-lg {
-    font-size: 1.33333em;
+    font-size: 1.3333333333em;
     line-height: 0.75em;
-    vertical-align: -.0667em;
+    vertical-align: -0.0667em;
 }
 
 .fa-xs {
-    font-size: .75em;
+    font-size: 0.75em;
 }
 
 .fa-sm {
-    font-size: .875em;
+    font-size: 0.875em;
 }
 
 .fa-1x {
@@ -3161,7 +3139,7 @@ readers do not read off random characters that represent icons */
 }
 
 .fa-box-tissue:before {
-    content: "\f95b";
+    content: "拏";
 }
 
 .fa-boxes:before {
@@ -3929,7 +3907,7 @@ readers do not read off random characters that represent icons */
 }
 
 .fa-dailymotion:before {
-    content: "\f952";
+    content: "勒";
 }
 
 .fa-dashcube:before {
@@ -4361,7 +4339,7 @@ readers do not read off random characters that represent icons */
 }
 
 .fa-faucet:before {
-    content: "\f905";
+    content: "串";
 }
 
 .fa-fax:before {
@@ -4525,7 +4503,7 @@ readers do not read off random characters that represent icons */
 }
 
 .fa-firefox-browser:before {
-    content: "\f907";
+    content: "龜";
 }
 
 .fa-first-aid:before {
@@ -5013,7 +4991,7 @@ readers do not read off random characters that represent icons */
 }
 
 .fa-hand-holding-medical:before {
-    content: "\f95c";
+    content: "樂";
 }
 
 .fa-hand-holding-usd:before {
@@ -5069,7 +5047,7 @@ readers do not read off random characters that represent icons */
 }
 
 .fa-hand-sparkles:before {
-    content: "\f95d";
+    content: "諾";
 }
 
 .fa-hand-spock:before {
@@ -5085,7 +5063,7 @@ readers do not read off random characters that represent icons */
 }
 
 .fa-hands-wash:before {
-    content: "\f95e";
+    content: "丹";
 }
 
 .fa-handshake:before {
@@ -5093,11 +5071,11 @@ readers do not read off random characters that represent icons */
 }
 
 .fa-handshake-alt-slash:before {
-    content: "\f95f";
+    content: "寧";
 }
 
 .fa-handshake-slash:before {
-    content: "\f960";
+    content: "怒";
 }
 
 .fa-hanukiah:before {
@@ -5129,19 +5107,19 @@ readers do not read off random characters that represent icons */
 }
 
 .fa-head-side-cough:before {
-    content: "\f961";
+    content: "率";
 }
 
 .fa-head-side-cough-slash:before {
-    content: "\f962";
+    content: "異";
 }
 
 .fa-head-side-mask:before {
-    content: "\f963";
+    content: "北";
 }
 
 .fa-head-side-virus:before {
-    content: "\f964";
+    content: "磻";
 }
 
 .fa-heading:before {
@@ -5281,7 +5259,7 @@ readers do not read off random characters that represent icons */
 }
 
 .fa-house-user:before {
-    content: "\f965";
+    content: "便";
 }
 
 .fa-houzz:before {
@@ -5329,7 +5307,7 @@ readers do not read off random characters that represent icons */
 }
 
 .fa-ideal:before {
-    content: "\f913";
+    content: "邏";
 }
 
 .fa-igloo:before {
@@ -5377,7 +5355,7 @@ readers do not read off random characters that represent icons */
 }
 
 .fa-instagram-square:before {
-    content: "\f955";
+    content: "凌";
 }
 
 .fa-intercom:before {
@@ -5533,7 +5511,7 @@ readers do not read off random characters that represent icons */
 }
 
 .fa-laptop-house:before {
-    content: "\f966";
+    content: "復";
 }
 
 .fa-laptop-medical:before {
@@ -5697,7 +5675,7 @@ readers do not read off random characters that represent icons */
 }
 
 .fa-lungs-virus:before {
-    content: "\f967";
+    content: "不";
 }
 
 .fa-lyft:before {
@@ -5869,7 +5847,7 @@ readers do not read off random characters that represent icons */
 }
 
 .fa-microblog:before {
-    content: "\f91a";
+    content: "駱";
 }
 
 .fa-microchip:before {
@@ -5925,7 +5903,7 @@ readers do not read off random characters that represent icons */
 }
 
 .fa-mixer:before {
-    content: "\f956";
+    content: "稜";
 }
 
 .fa-mizuni:before {
@@ -6245,7 +6223,7 @@ readers do not read off random characters that represent icons */
 }
 
 .fa-people-arrows:before {
-    content: "\f968";
+    content: "泌";
 }
 
 .fa-people-carry:before {
@@ -6333,7 +6311,7 @@ readers do not read off random characters that represent icons */
 }
 
 .fa-pied-piper-square:before {
-    content: "\f91e";
+    content: "爛";
 }
 
 .fa-piggy-bank:before {
@@ -6377,7 +6355,7 @@ readers do not read off random characters that represent icons */
 }
 
 .fa-plane-slash:before {
-    content: "\f969";
+    content: "數";
 }
 
 .fa-play:before {
@@ -6481,11 +6459,11 @@ readers do not read off random characters that represent icons */
 }
 
 .fa-pump-medical:before {
-    content: "\f96a";
+    content: "索";
 }
 
 .fa-pump-soap:before {
-    content: "\f96b";
+    content: "參";
 }
 
 .fa-pushed:before {
@@ -6869,7 +6847,7 @@ readers do not read off random characters that represent icons */
 }
 
 .fa-shield-virus:before {
-    content: "\f96c";
+    content: "塞";
 }
 
 .fa-ship:before {
@@ -6889,7 +6867,7 @@ readers do not read off random characters that represent icons */
 }
 
 .fa-shopify:before {
-    content: "\f957";
+    content: "綾";
 }
 
 .fa-shopping-bag:before {
@@ -7073,7 +7051,7 @@ readers do not read off random characters that represent icons */
 }
 
 .fa-soap:before {
-    content: "\f96e";
+    content: "葉";
 }
 
 .fa-socks:before {
@@ -7297,7 +7275,7 @@ readers do not read off random characters that represent icons */
 }
 
 .fa-stopwatch-20:before {
-    content: "\f96f";
+    content: "說";
 }
 
 .fa-store:before {
@@ -7309,11 +7287,11 @@ readers do not read off random characters that represent icons */
 }
 
 .fa-store-alt-slash:before {
-    content: "\f970";
+    content: "殺";
 }
 
 .fa-store-slash:before {
-    content: "\f971";
+    content: "辰";
 }
 
 .fa-strava:before {
@@ -7633,7 +7611,7 @@ readers do not read off random characters that represent icons */
 }
 
 .fa-toilet-paper-slash:before {
-    content: "\f972";
+    content: "沈";
 }
 
 .fa-toolbox:before {
@@ -7673,7 +7651,7 @@ readers do not read off random characters that represent icons */
 }
 
 .fa-trailer:before {
-    content: "\f941";
+    content: "論";
 }
 
 .fa-train:before {
@@ -7821,7 +7799,7 @@ readers do not read off random characters that represent icons */
 }
 
 .fa-unity:before {
-    content: "\f949";
+    content: "雷";
 }
 
 .fa-universal-access:before {
@@ -8053,15 +8031,15 @@ readers do not read off random characters that represent icons */
 }
 
 .fa-virus:before {
-    content: "\f974";
+    content: "若";
 }
 
 .fa-virus-slash:before {
-    content: "\f975";
+    content: "掠";
 }
 
 .fa-viruses:before {
-    content: "\f976";
+    content: "略";
 }
 
 .fa-vk:before {
@@ -8326,7 +8304,7 @@ readers do not read off random characters that represent icons */
 
 @font-face {
     font-display: block;
-    font-family: 'Font Awesome 5 Brands';
+    font-family: "Font Awesome 5 Brands";
     font-style: normal;
     font-weight: 400;
     src: url("../fonts/fa-brands-400.eot");
@@ -8334,13 +8312,13 @@ readers do not read off random characters that represent icons */
 }
 
 .fab {
-    font-family: 'Font Awesome 5 Brands';
+    font-family: "Font Awesome 5 Brands";
     font-weight: 400;
 }
 
 @font-face {
     font-display: block;
-    font-family: 'Font Awesome 5 Free';
+    font-family: "Font Awesome 5 Free";
     font-style: normal;
     font-weight: 900;
     src: url("../fonts/fa-solid-900.eot");
@@ -8349,7 +8327,7 @@ readers do not read off random characters that represent icons */
 
 .fa,
 .fas {
-    font-family: 'Font Awesome 5 Free';
+    font-family: "Font Awesome 5 Free";
     font-weight: 900;
 }
 
@@ -8403,7 +8381,7 @@ readers do not read off random characters that represent icons */
 }
 
 .in-liquid-2 {
-    background: linear-gradient(0deg, rgba(255, 255, 255, 0) 55%, #ffefec 100%);
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0) 55%, rgb(255, 239, 236) 100%);
 }
 
 .in-liquid-2 .uk-container {
@@ -8448,7 +8426,7 @@ readers do not read off random characters that represent icons */
     height: 1px;
     background-color: #d8dfe2;
     position: absolute;
-    content: '';
+    content: "";
     top: 44%;
     left: 20%;
     z-index: 0;
@@ -8545,7 +8523,7 @@ readers do not read off random characters that represent icons */
 }
 
 .in-liquid-4 .in-blog-4 a.uk-button-text {
-    color: #999999;
+    color: rgb(153, 153, 153);
 }
 
 .in-liquid-4 .in-blog-4 a.uk-button-text:hover {
@@ -8590,7 +8568,7 @@ readers do not read off random characters that represent icons */
     width: 1px;
     height: 98%;
     background-color: #fc5b3f;
-    content: '';
+    content: "";
     position: absolute;
     top: 0;
     left: 7px;
@@ -8671,7 +8649,7 @@ readers do not read off random characters that represent icons */
 }
 
 .in-liquid-6 {
-    background: linear-gradient(0deg, rgba(255, 255, 255, 0) 55%, #ffefec 100%);
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0) 55%, rgb(255, 239, 236) 100%);
 }
 
 .in-liquid-6 .uk-container {
@@ -8708,35 +8686,19 @@ readers do not read off random characters that represent icons */
 .in-liquid-6 .dot-pulse {
     border-radius: 50px;
     background: rgba(253, 124, 102, 0.9);
-    box-shadow: 0 0 0 0 #fd7c66;
+    box-shadow: 0 0 0 0 rgb(253, 124, 102);
 }
 
 .in-liquid-6 .dot-pulse.one {
     width: 15px;
     height: 15px;
-    -webkit-animation: one 2s infinite;
-            animation: one 2s infinite;
+    animation: one 2s infinite;
 }
 
 .in-liquid-6 .dot-pulse.two {
     width: 8px;
     height: 8px;
-    -webkit-animation: two 3s infinite;
-            animation: two 3s infinite;
-}
-
-@-webkit-keyframes one {
-    0% {
-        box-shadow: 0 0 0 0 rgba(253, 124, 102, 0.7);
-    }
-
-    70% {
-        box-shadow: 0 0 0 25px rgba(253, 124, 102, 0);
-    }
-
-    100% {
-        box-shadow: 0 0 0 0 rgba(253, 124, 102, 0);
-    }
+    animation: two 3s infinite;
 }
 
 @keyframes one {
@@ -8746,20 +8708,6 @@ readers do not read off random characters that represent icons */
 
     70% {
         box-shadow: 0 0 0 25px rgba(253, 124, 102, 0);
-    }
-
-    100% {
-        box-shadow: 0 0 0 0 rgba(253, 124, 102, 0);
-    }
-}
-
-@-webkit-keyframes two {
-    0% {
-        box-shadow: 0 0 0 0 rgba(253, 124, 102, 0.7);
-    }
-
-    70% {
-        box-shadow: 0 0 0 18px rgba(253, 124, 102, 0);
     }
 
     100% {
@@ -8837,7 +8785,7 @@ readers do not read off random characters that represent icons */
     width: 100%;
     height: 100%;
     background-image: linear-gradient(120deg, #eaee44, #33d0ff);
-    opacity: .6;
+    opacity: 0.6;
     border-radius: 6px;
 }
 
@@ -8850,9 +8798,8 @@ readers do not read off random characters that represent icons */
     height: 75px;
     border-radius: 50px;
     background: rgba(255, 255, 255, 0.9);
-    box-shadow: 0 0 0 0 white;
-    -webkit-animation: pulse-white 2s infinite;
-            animation: pulse-white 2s infinite;
+    box-shadow: 0 0 0 0 rgb(255, 255, 255);
+    animation: pulse-white 2s infinite;
 }
 
 .in-liquid-8 .in-liquid-video i {
@@ -8860,20 +8807,6 @@ readers do not read off random characters that represent icons */
     position: absolute;
     top: 25px;
     left: 28px;
-}
-
-@-webkit-keyframes pulse-white {
-    0% {
-        box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.7);
-    }
-
-    70% {
-        box-shadow: 0 0 0 40px rgba(255, 255, 255, 0);
-    }
-
-    100% {
-        box-shadow: 0 0 0 0 rgba(255, 255, 255, 0);
-    }
 }
 
 @keyframes pulse-white {
@@ -8961,7 +8894,7 @@ readers do not read off random characters that represent icons */
 }
 
 .in-liquid-11 {
-    background: linear-gradient(0deg, rgba(255, 255, 255, 0) 55%, #ffefec 100%);
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0) 55%, rgb(255, 239, 236) 100%);
 }
 
 .in-liquid-11 .uk-container {
@@ -9117,7 +9050,7 @@ readers do not read off random characters that represent icons */
 }
 
 .in-liquid-14 {
-    background: linear-gradient(0deg, rgba(255, 255, 255, 0) 55%, #ffefec 100%);
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0) 55%, rgb(255, 239, 236) 100%);
 }
 
 .in-liquid-14 .uk-container {
