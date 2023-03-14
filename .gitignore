@@ -3,5 +3,7 @@
 # Useful .gitignore templates: https://github.com/github/gitignore
 node_modules
 .cache
-psd
 documentation
+/dist/
+/psd/
+/node_modules/

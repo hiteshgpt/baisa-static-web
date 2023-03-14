@@ -189,7 +189,7 @@ function resetPages(done) {
 };
 
 // Wacth file task
-function wacthFiles() {
+function watchFiles() {
     watch('src/assets/scss/**/*.scss', series(compileCss))
     watch('src/assets/js/**/*.js', series(compileJs))
     watch('src/assets/img/**/*', series(compressImg))
@@ -210,5 +210,6 @@ function browserReload() {
 
 // Define task for gulp
 task("build", series(cleanDist, compileHtml, compileCss, compileJs, staticAssets, compressImg))
-task("watch", parallel(wacthFiles, browserReload))
+task("watch", parallel(watchFiles, browserReload))
 task("minify", minifyFiles)
+task("compile-html", compileHtml)
