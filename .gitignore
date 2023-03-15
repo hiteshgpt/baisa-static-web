@@ -4,6 +4,6 @@
 node_modules
 .cache
 documentation
-/dist/
 /psd/
 /node_modules/
+/documentation/
